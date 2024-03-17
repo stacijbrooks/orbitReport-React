@@ -23,12 +23,10 @@ const Table = ({ sat }) => {
            {/* Launch Date */}
            <td>{data.launchDate}</td>
            {/* Status */}
-           <td>{data.operational ? 'Active' : 'Inactive'}</td>
+           <td>{data.operational ? 'Operational' : 'Not Operational'}</td>
         </tr>
       ))}
-     <tr>
-       <td>Row Data TBD</td>
-     </tr>
+     <tr/>
      </tbody>
    </table>
   );
