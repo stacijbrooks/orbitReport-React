@@ -1,10 +1,11 @@
 import React from 'react';
 // import satData from "./components/satData";
 import satData from './satData';
+import './styling.css';
 
 const Buttons = ({ filterByType, setSat, displaySats }) => {
   return (
-    <div>
+    <div className="flex-container">
        {/* Functional component Buttons that takes props: filterByType, setSat, and displaySats */}
        {/* Button to filter Low Orbit Satellites */}
       <button onClick={() => filterByType("Low")} title="Filter Low Orbit Satellites">Low Orbit</button>
